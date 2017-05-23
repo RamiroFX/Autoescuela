@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Autoescuela</string>
+    <!--MAIN-->
+    <string name="main_register_student">Registrar estudiante</string>
+    <string name="main_begin_test">Empezar prueba</string>
+    <string name="main_menu_configuration">Configuración</string>
+    <!---->
+</resources>
