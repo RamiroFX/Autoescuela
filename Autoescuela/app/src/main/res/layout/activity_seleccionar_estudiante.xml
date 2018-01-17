@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.ramiro.autoescuela.activities.SeleccionarEstudianteActivity">
+
+
+    <TextView
+        android:id="@+id/tvSeleccionEstudianteTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_margin="20dp"
+        android:text="@string/select_student_title"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="bold"
+        tools:text="@string/select_student_title" />
+
+    <GridLayout
+        android:id="@+id/glSeleccionarEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSeleccionEstudianteTitulo"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/tvCedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_student_pin" />
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_seleecionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/glSeleccionarEstudiante"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:onClick="seleccionarEstudiante"
+        android:text="@string/main_begin_test" />
+
+</RelativeLayout>

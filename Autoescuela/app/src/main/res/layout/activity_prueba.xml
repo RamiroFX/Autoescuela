@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_prueba"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.ramiro.autoescuela.activities.PruebaActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:layout_gravity="left"
+                android:rowCount="5">
+
+                <TextView
+                    android:id="@+id/tvPruebaCategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPregunta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton android:id="@+id/rbRespuesta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/rbRespuesta2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/rbRespuesta3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"
+                        android:onClick="onRadioButtonClicked"/>
+
+                </RadioGroup>
+            </GridLayout>
+            <Button
+                android:id="@+id/btnSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_next_question"
+                android:onClick="siguientePregunta"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

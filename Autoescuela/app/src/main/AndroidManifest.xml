@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ramiro.autoescuela">
 
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +17,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MenuPrincipalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.RegistrarEstudianteActivity" />
+        <activity
+            android:name=".activities.ContenedorAdministrarAppActivity"
+            android:label="@string/title_activity_contenedor_administrar_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.TomarFotoActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.ramiro.autoescuela.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activities.SeleccionarPruebaActivity" />
+        <activity android:name=".activities.PruebaActivity" />
+        <activity android:name=".activities.SeleccionarEstudianteActivity" />
+        <activity android:name=".activities.VerPruebaActivity" />
+        <activity android:name=".activities.VerPruebaDetalleActivity"></activity>
     </application>
 
 </manifest>

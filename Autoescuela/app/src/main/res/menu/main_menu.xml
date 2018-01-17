@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_configuration"
-        android:title="@string/main_menu_configuration"
+        android:id="@+id/action_administrate"
+        android:title="@string/main_menu_administration"
         app:showAsAction="always" />
 
 </menu>

@@ -3,6 +3,35 @@
     <!--MAIN-->
     <string name="main_register_student">Registrar estudiante</string>
     <string name="main_begin_test">Empezar prueba</string>
-    <string name="main_menu_configuration">Configuración</string>
+    <string name="main_menu_administration">Administración</string>
+    <!--REGISTER STUDENT-->
+    <string name="register_student_take_picture">Tomar foto</string>
+    <string name="register_student_name">Nombres</string>
+    <string name="register_student_lastname">Apellidos</string>
+    <string name="register_student_pin">Cédula</string>
+    <string name="register_student_age">Edad</string>
+    <string name="register_student_save_data">Guardar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_contenedor_administrar_app">Administrar App</string>
+    <string name="action_settings">Preferencias</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <!--FRAGMENT STUDENT-->
+    <string name="fragment_estudiantes_ver_pruebas">Ver pruebas</string>
+    <string name="titulo_list_estudiantes">Lista de estudiantes</string>
+    <string name="titulo_datos_estudiantes">Datos</string>
+    <string name="begin_test_normas_y_legislacion">Normas y legislación</string>
+    <string name="begin_test_senhales_transito">Señales de tránsito</string>
+    <string name="begin_test_primeros_auxilios">Primeros auxilios</string>
+    <string name="begin_test_mecanica">Mecánica</string>
+    <string name="begin_test_instrucciones">Cada test consta de 20 preguntas relacionadas a conocimientos generales y específicos al test seleccionado. Cada pregunta presenta tres opciones de respuesta, deberá escoger solo una y pulsar \"siguiente\". Al finalizar el test podrá visualizar los resultados e intentar nuevamente.</string>
+    <string name="test_next_question">Siguiente pregunta</string>
+    <string name="select_student_title">Selección de estudiante</string>
+    <string name="view_test_student">Estudiante:</string>
+    <!--VER PRUEBA DETALLE-->
+    <string name="la_respuesta_correcta_es">La respuesta correcta es:</string>
+    <string name="la_respuesta_seleccionada_es">La respuesta seleccionada es:</string>
+    <string name="test_results_title">Resultados de la prueba:</string>
     <!---->
 </resources>

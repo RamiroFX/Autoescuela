@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.ramiro.autoescuela.MainActivity">
+    tools:context="com.example.ramiro.autoescuela.activities.MenuPrincipalActivity">
 
     <Button
         android:id="@+id/register_student"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:onClick="lanzarRegistrarEstudiante"
         android:text="@string/main_register_student" />
 
     <Button
@@ -20,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/main_begin_test" />
+        android:text="@string/main_begin_test"
+        android:onClick="lanzarPrueba"/>
 
 </LinearLayout>

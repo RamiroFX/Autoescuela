@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.ramiro.autoescuela.activities.VerPruebaActivity">
+
+
+    <GridLayout
+        android:id="@+id/glCabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_test_student"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDatosEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lvListaPruebas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/glCabecera"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>

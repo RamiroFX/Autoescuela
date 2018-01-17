@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ramiro.autoescuela.fragments.VerDatosEstudiantesFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/titulo_principal_datos_estudiantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_datos_estudiantes"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/ivStudentPicture"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:gravity="center"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:layout_below="@+id/titulo_principal_datos_estudiantes" />
+                <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="center"
+                android:rowCount="4">
+
+                <TextView
+                    android:id="@+id/tvNombres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_student_name"
+                    tools:text="Nombres"
+                    android:layout_below="@+id/ivStudentPicture"/>
+
+                <TextView
+                    android:id="@+id/etNombres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/ivStudentPicture"
+                    android:layout_toRightOf="@+id/tvNombres"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvApellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_student_lastname"
+                    tools:text="Apellidos"
+                    android:layout_below="@+id/tvNombres"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/etApellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:inputType="textPersonName"
+                    android:layout_below="@+id/tvNombres"
+                    android:layout_toRightOf="@+id/tvApellidos"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_student_pin"
+                    tools:text="Cedula"
+                    android:layout_below="@+id/tvApellidos"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/etPIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:inputType="number"
+                    android:layout_below="@+id/tvApellidos"
+                    android:layout_toRightOf="@+id/tvPIN"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_student_age"
+                    tools:text="Edad"
+                    android:layout_below="@+id/tvPIN"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/etAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:inputType="number"
+                    android:layout_below="@+id/tvPIN"
+                    android:layout_toRightOf="@+id/tvAge"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btnViewTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_estudiantes_ver_pruebas"
+                    android:gravity="center"
+                    android:layout_below="@+id/tvAge"/>
+        </GridLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>
